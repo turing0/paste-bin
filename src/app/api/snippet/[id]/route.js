@@ -23,7 +23,7 @@ export async function GET(request, context) {
   let snippet = null
   
   if (response) {
-    if (response.expire.value !== 0 && response.expireAt < new Date()) {
+    if (response.expire.value !== 0 && (!response.expireAt || response.expireAt < new Date())) {
       // Delete the expired snippet
       await clientPromise.then(async (client) => {
         const db = client.db()
