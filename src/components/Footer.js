@@ -1,11 +1,11 @@
 const navigation = {
   main: [
-    { name: 'Github', href: 'https://github.com/LiamAshdown/paste-app' }
+    { name: 'Github', href: 'https://github.com/turing0/paste-bin' }
   ],
   social: [
     {
       name: 'GitHub',
-      href: 'https://github.com/LiamAshdown/paste-app',
+      href: 'https://github.com/turing0/paste-bin',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path

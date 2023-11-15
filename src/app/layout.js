@@ -12,7 +12,7 @@ import ToastContainerLayout from '@/components/ToastContainerLayout'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: '123 Pastebin - A Pastebin Clone',
+  title: 'Pastebin - Laphel',
   description: 'A pastebin clone built with Next.js, MongoDB and Tailwind CSS',
 }
 
