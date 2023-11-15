@@ -32,7 +32,7 @@ git clone https://github.com/turing0/paste-bin.git
 Create a file named `.env.local` in the root directory of the project. Add the following environment variables to the file.
 ```bash
 SECRET_KEY= # A random string used for encryption.
-BASE_URL= # The URL of the app.
+BASE_URL= # The URL of the app. ex: https://paste.laphel.com/
 MONGODB_URI= # The connection string to your MongoDB instance.
 ```
 
