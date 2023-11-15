@@ -25,6 +25,8 @@ export async function POST(request) {
   const response = await clientPromise.then((client) => {
     const db = client.db()
     const collection = db.collection('snippets')
+    collection.createIndex({ "expireAt": 1 }, { expireAfterSeconds: 0 });
+
     const response = collection.insertOne(encryptedCode)
 
     return response
