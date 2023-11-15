@@ -38,7 +38,7 @@ export default function Nav() {
               <div className="flex">
                 <div className="flex flex-shrink-0 items-center">
                   <Link className="text-gradient" href="/">
-                    123Paste
+                  Pastebin
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">

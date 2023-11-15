@@ -1,7 +1,7 @@
 const faqs = [
   {
     id: 1,
-    question: "How does 123paste ensure privacy and security?",
+    question: "How does pastebin ensure privacy and security?",
     answer:
       "We use strong encryption to protect the content you paste on our platform. Every paste is encrypted with a unique key, ensuring that only those with the link to the paste can access its contents. We do not store any personal information or data, and there is no sign-in or registration required, enhancing your privacy.",
   },
@@ -9,7 +9,7 @@ const faqs = [
     id: 2,
     question: "How long do pastes stay available?",
     answer:
-      "Pastes on 123paste are designed to be available for a limited time. By default, pastes are set to expire after a certain period, which you can choose during the paste creation process. Once a paste expires, it is permanently deleted from our servers.",
+      "Pastes on pastebin are designed to be available for a limited time. By default, pastes are set to expire after a certain period, which you can choose during the paste creation process. Once a paste expires, it is permanently deleted from our servers.",
   },
   {
     id: 3,
