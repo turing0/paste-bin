@@ -8,7 +8,8 @@ export default function Home() {
     <>
       <div>
         <Hero />
-        <div className="container mx-auto px-4 lg:w-2/4 my-24">
+        {/* <div className="container mx-auto px-4 lg:w-2/4 my-24"> */}
+        <div className="container mx-auto px-4 lg:w-2/4 mt-12 mb-24">
           <Steps />
           <PasteArea />
         </div>
