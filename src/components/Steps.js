@@ -4,7 +4,7 @@ const Steps = () => {
   return (
     <div>
       <p className="text-base font-semibold leading-7 text-indigo-600 dark:text-blue-300 text-center mb-8">
-        Takes 3 steps to share code snippets. No account required.
+        Takes 3 steps to share text or code snippets. No account required.
       </p>
       <div className="grid grid-cols-12 justify-center items-center gap-4 text-center mb-12">
         <div></div>
