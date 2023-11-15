@@ -20,13 +20,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={classNames(inter.className, 'bg-gray-100 dark:bg-zinc-900')}>
-        <Providers>
-          <Nav />
-          {children}
-          <Footer />
-          <Modal />
-          <ToastContainerLayout />
-        </Providers>
+        <div className="flex flex-col min-h-screen"> {/* 添加 flex 容器 */}
+          <Providers>
+            <Nav />
+            <main className="flex-grow"> {/* 确保主内容区域可以伸展 */}
+              {children}
+            </main>
+            <Footer />
+            <Modal />
+            <ToastContainerLayout />
+          </Providers>
+        </div>
       </body>
     </html>
   )
