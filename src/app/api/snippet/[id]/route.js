@@ -21,7 +21,7 @@ export async function GET(request, context) {
   })
 
   let snippet = null
-  console.log(response)
+  
   if (response) {
     if (response.expire.value !== 0 && response.expireAt < new Date()) {
       // Delete the expired snippet
@@ -38,6 +38,7 @@ export async function GET(request, context) {
     } else {
       snippet = {
         expire: response.expire,
+        expireAt: response.expireAt,
         language: response.language,
         title: response.title,
         code: decryptSnippet(response.code, response.iv)
