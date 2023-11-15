@@ -17,7 +17,7 @@ async function getData(id) {
 
 const Snippet = async ({ params }) => {
   const data = await getData(params.id)
-
+  console.log(data)
   if (!data) {
     notFound()
   }
