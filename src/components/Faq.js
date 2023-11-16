@@ -22,7 +22,7 @@ const faqs = [
 export default function Faq() {
   return (
     <div className="bg-gray-50 dark:bg-zinc-800">
-      <div className="mx-auto max-w-7xl divide-y divide-gray-900/10 dark:divide-gray-50/10 px-6 py-24 sm:py-16 lg:px-8 lg:py-20">
+      <div className="mx-auto max-w-7xl divide-y divide-gray-900/10 dark:divide-gray-50/10 px-6 py-24 sm:py-8 lg:px-8 lg:py-10">
         <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-gray-200 text-gradient">Frequently asked questions</h2>
         <dl className="mt-10 space-y-8 divide-y divide-gray-900/10 dark:divide-gray-50/10">
           {faqs.map((faq) => (
