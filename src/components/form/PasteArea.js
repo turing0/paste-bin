@@ -169,7 +169,7 @@ export default function PasteArea({ snippet = null }) {
             Description
           </label>
 
-          <Editor
+          {/* <Editor
             height="350px"
             language={form.language.value}
             theme={theme === 'dark' ? 'vs-dark' : 'light'}
@@ -179,7 +179,7 @@ export default function PasteArea({ snippet = null }) {
               minimap: {
                 enabled: false,
               },
-              // contextmenu: false,
+              contextmenu: false,
               suggest: {
                 enabled: false,
               },
@@ -189,8 +189,8 @@ export default function PasteArea({ snippet = null }) {
               quickSuggestions: false
             }}
             onChange={(value) => onChange('code', value)}
-          />
-          {/* <textarea
+          /> */}
+          <textarea
             id="code"
             name="code"
             value={form.code}
@@ -198,7 +198,7 @@ export default function PasteArea({ snippet = null }) {
             className="block w-full border-0 pt-2.5 text-lg font-medium placeholder:text-gray-400 focus:ring-0 dark:bg-zinc-800 dark:text-gray-300"
             style={{ height: '350px' }} // 设置高度以匹配原 Editor 组件
             disabled={!!snippet}
-          ></textarea> */}
+          ></textarea>
 
           {/* Spacer element to match the height of the toolbar */}
           <div aria-hidden="true">
