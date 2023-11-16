@@ -35,7 +35,7 @@ const Snippet = async ({ params }) => {
       )}
       {!data.expired && (
         <div>
-          <p className="mb-6 border border-blue-500 bg-blue-100 p-4">This snippet will expired in {data.expireAt}</p>
+          <p className="text-sm border border-blue-500 bg-blue-100 p-4">This snippet will expire in {data.expireAt}</p>
           <PasteArea snippet={data} />
         </div>
       )}
