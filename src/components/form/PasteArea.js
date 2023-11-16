@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { CodeBracketIcon, ClockIcon, ArrowUpTrayIcon, ClipboardIcon, CheckBadgeIcon } from '@heroicons/react/20/solid'
 import Editor from '@monaco-editor/react'
+import React, { useEffect, useRef } from 'react';
 import BubbleDropdown from '@/components/form/BubbleDropdown'
 
 import { useTheme } from 'next-themes'
@@ -107,6 +108,13 @@ export default function PasteArea({ snippet = null }) {
     }, 2000)
   }
 
+  const textareaRef = useRef(null);
+  useEffect(() => {
+    if (textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  }, []);
+
   const onSubmit = async (e) => {
     e.preventDefault()
 
@@ -191,13 +199,15 @@ export default function PasteArea({ snippet = null }) {
             onChange={(value) => onChange('code', value)}
           /> */}
           <textarea
+            ref={textareaRef}
             id="code"
             name="code"
             value={form.code}
             onChange={(e) => onChange('code', e.target.value)}
-            className="block w-full border-0 pt-2.5 text-lg font-medium placeholder:text-gray-400 focus:ring-0 dark:bg-zinc-800 dark:text-gray-300"
-            style={{ height: '350px' }} // 设置高度以匹配原 Editor 组件
+            className="block w-full border-0 pt-2.5 text-base font-mono placeholder:text-gray-400 focus:ring-0 dark:bg-zinc-800 dark:text-gray-300"
+            style={{ height: '350px' }} 
             disabled={!!snippet}
+            placeholder="Your text..."
           ></textarea>
 
           {/* Spacer element to match the height of the toolbar */}
